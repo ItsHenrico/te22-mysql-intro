@@ -1,10 +1,8 @@
 {% extends "layout.njk" %}
 {% block content %}
-<h1>Hello</h1>
-
 <ul>
     {% for specie in species %}
-    <li><a href="./species/{{specie.id}}">Wilsd</a></li>
+    <li><a href="species/{{specie.id}}">{{specie.name}}</a></li>
     {% endfor %}
 </ul>
 {% endblock %}

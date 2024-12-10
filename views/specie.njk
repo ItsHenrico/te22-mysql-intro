@@ -1,5 +1,6 @@
 {% extends "layout.njk" %}
 {% block content %}
-    <h1>{{name}} är en {{species}}</h1>
-    <p>Dess vingspann är {{wingspan}} cm</p>
+    <h1>{{species.name}}</h1>
+    <p>Dess vingspann är mellan {{species.wingspan_min}} och {{species.wingspan_max}} cm</p>
+    <p>{{species.name}} är {{species.latin}} på latin</p>
 {% endblock %}
